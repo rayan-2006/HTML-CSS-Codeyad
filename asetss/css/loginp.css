@@ -1,0 +1,146 @@
+@font-face {
+    font-family: yekan;
+    src: url('/asetss/fontfarsi/yekan-font/yekan-regular.woff2') format('woff2'), url('/asetss/fontfarsi/yekan-font/yekan-regular.woff') format('woff'), url('/asetss/fontfarsi/yekan-font/yekan-regular.ttf') format('truetype');
+}
+
+body {
+    text-align: center;
+    direction: rtl;
+    font-family: yekan;
+    height: 100vh;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    width: 70px;
+    height: 40px;
+}
+
+.Language {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_of_the_USA.png') center center/cover no-repeat;
+}
+
+.registersection {
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    display: inline-block;
+    text-align: justify;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
+}
+
+.registersection .title {
+    margin-right: 20px;
+}
+
+.registersection h1 {
+    font-size: 30px;
+    display: inline-block;
+    background: linear-gradient(to right, #FAFF00, #00E0FF);
+    background-clip: text;
+    color: #00000000;
+    margin: 25px 0 0 0;
+}
+
+.registersection h5 {
+    margin: 25px 0 0 0;
+}
+
+.registersection span {
+    color: #ff0000;
+}
+
+.formsection {
+    text-align: center;
+}
+
+.formsection .halfinput {
+    text-align: justify;
+    width: 46%;
+    display: inline-block;
+}
+
+.formsection .lineinput {
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+    margin: 10px 10px 0 0;
+}
+
+.lineinput label,
+.formsection label {
+    margin-left: 10px;
+}
+
+.lineinput input {
+    width: calc(100% - 50px);
+    height: 30px;
+}
+
+input {
+    border: none;
+    background: linear-gradient( to left, #FF8A00, #DBFF00);
+    height: 30px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-family: yekan;
+    font-size: 15px;
+    padding: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+}
+
+.checkboxsection,
+.radiosection {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.radio,
+.checkbox {
+    box-shadow: none;
+}
+
+.checkboxsection {
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+.checkboxsection label {
+    vertical-align: super;
+    font-size: 10px;
+}
+
+.checkboxsection input {
+    width: 10px;
+    height: 26px;
+    vertical-align: sub;
+}
+
+.formsection button {
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 100px;
+    background-color: #FF8A00;
+    color: white;
+    font-family: yekan;
+}
+
+.formsection input::placeholder {
+    color: rgba(255, 255, 255, 0.714);
+}

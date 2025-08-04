@@ -1,0 +1,26 @@
+.ferst {
+    align-items: center;
+}
+
+.ferst-n {
+    background-color: yellow;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.ferst-m {
+    background-color: yellow;
+    margin: 0 auto;
+    height: 300px;
+    width: 95%;
+}
+
+span {
+    display: inline-block;
+    background-color: black;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin: 0px 280px;
+}
