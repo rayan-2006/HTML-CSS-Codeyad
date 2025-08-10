@@ -3,7 +3,7 @@ body {
     height: 100vh;
 }
 
-a {
+body a {
     display: flex;
     text-decoration: none;
     width: 70px;
@@ -128,13 +128,15 @@ input {
     vertical-align: sub;
 }
 
-.formsection button {
+.btnsection button {
     width: 50%;
     height: 35px;
     border: none;
     border-radius: 100px;
     background-color: #FF8A00;
     color: white;
+    box-shadow: 0 0 10px black inset;
+    cursor: pointer;
 }
 
 .formsection input::placeholder {
