@@ -137,6 +137,16 @@ input {
     color: white;
     box-shadow: 0 0 10px black inset;
     cursor: pointer;
+    transition: all 1s ease;
+}
+
+.btnsection button:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.btnsection button:focus {
+    box-shadow: 0 0 10px black inset;
+    background-color: yellow;
 }
 
 .formsection input::placeholder {
