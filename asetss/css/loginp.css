@@ -131,7 +131,7 @@ input {
     vertical-align: sub;
 }
 
-.formsection button {
+.btnsection button {
     width: 50%;
     height: 35px;
     border: none;
@@ -139,8 +139,19 @@ input {
     background-color: #FF8A00;
     color: white;
     font-family: yekan;
+    box-shadow: 0 0 10px black inset;
+    transition: all 1s ease;
 }
 
-.formsection input::placeholder {
+.btnsection button:hover {
+    box-shadow: 0 0 10px black
+}
+
+.btnsection button:focus {
+    box-shadow: 0 0 10px black inset;
+    background-color: yellow;
+}
+
+.checkboxsection input::placeholder {
     color: rgba(255, 255, 255, 0.714);
 }
