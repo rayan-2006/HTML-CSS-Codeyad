@@ -3,16 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures proper rendering and touch zooming on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking external CSS stylesheet -->
     <link rel="stylesheet" href="/asetss/css/login.css">
     <title>login</title>
 </head>
 
 <body>
+    <!-- Language switch button (redirects to Farsi version) -->
     <a href="/asetss/pages/login2p.html">
-        <button class="Language" type="button" url="">فارسی</button>
+        <button class="Language" type="button">فارسی</button>
     </a>
+
+    <!-- Registration / Login Section -->
     <section class="registersection">
+        <!-- Title area -->
         <div class="title">
             <h1>
                 sing up
@@ -21,73 +27,70 @@
                 Let’s Create Your <span>Account</span>
             </h5>
         </div>
+
+        <!-- Registration form -->
         <form action="/index.html" class="formsection">
+            <!-- First Name Input -->
             <div class="halfinput">
-                <label for="">
-                    first name
-                </label>
-                <br>
-                <input type="text" name="" id="" placeholder="Rayan" required>
+                <label for="">first name</label><br>
+                <input type="text" placeholder="Rayan" required>
             </div>
+
+            <!-- Last Name Input -->
             <div class="halfinput">
-                <label for="">
-                    last name
-                </label>
-                <br>
-                <input type="text" name="" id="" placeholder="Abdi" required>
+                <label for="">last name</label><br>
+                <input type="text" placeholder="Abdi" required>
             </div>
+
+            <!-- Gender Radio Buttons -->
             <div class="radiosection">
                 <label for="">gender</label><br>
                 <div class="radiobox">
                     <div class="checkboxsection">
-                        <label for="">
-                            Male
-                        </label>
-                        <input class="radio" type="radio" name="gender" id="" placeholder="gender">
-                        <label for="">
-                            Female
-                        </label>
-                        <input class="radio" type="radio" name="gender" id="" placeholder="gender">
+                        <label for="">Male</label>
+                        <input class="radio" type="radio" name="gender" placeholder=".">
+                        <label for="">Female</label>
+                        <input class="radio" type="radio" name="gender" placeholder=".">
                     </div>
                 </div>
             </div>
+
+            <!-- Email Input -->
             <div class="lineinput">
-                <label for="">
-                    Email
-                </label>
-                <br>
-                <input type="email" name="" id="" placeholder="mohammadabdia10s@gmail.com">
+                <label for="">Email</label><br>
+                <input type="email" placeholder="mohammadabdia10s@gmail.com">
             </div>
+
+            <!-- Email Re-Type Input -->
             <div class="lineinput">
-                <label for="">
-                    ReType repetition
-                </label>
-                <br>
-                <input type="email" name="" id="" placeholder="mohammadabdia10s@gmail.com">
+                <label for="">ReType repetition</label><br>
+                <input type="email" placeholder="mohammadabdia10s@gmail.com">
             </div>
+
+            <!-- Password Input -->
             <div class="lineinput">
-                <label for="">
-                    password
-                </label><br>
-                <input type="password" name="" id="" placeholder="Rayan2006221*">
+                <label for="">password</label><br>
+                <input type="password" placeholder="Rayan2006221*">
             </div>
+
+            <!-- Password Re-Type Input -->
             <div class="lineinput">
-                <label for="">
-                    ReType Password
-                </label>
-                <br>
-                <input type="password" name="" id="" placeholder="Rayan2006221*">
+                <label for="">ReType Password</label><br>
+                <input type="password" placeholder="Rayan2006221*">
             </div>
+
+            <!-- Terms & Conditions Checkbox -->
             <div class="checkboxsection">
-                <input class="checkbox" type="checkbox" name="" id="" placeholder="checkbox">
+                <input class="checkbox" type="checkbox" placeholder=".">
                 <label for="">I Agree To The Terms & Condition</label>
             </div>
+
+            <!-- Submit Button -->
             <div class="btnsection">
                 <button type="submit">
                     login
                 </button>
             </div>
-
         </form>
     </section>
 </body>

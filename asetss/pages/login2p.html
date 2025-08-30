@@ -3,91 +3,98 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Ensure proper rendering of characters -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive layout -->
     <link rel="stylesheet" href="/asetss/css/loginp.css">
+    <!-- External CSS file -->
     <title>login</title>
 </head>
 
 <body>
+    <!-- Language switch button (to English version) -->
     <a href="/asetss/pages/login2.html">
         <button class="Language" type="button" url="">Eng</button>
     </a>
+
+    <!-- Registration container -->
     <section class="registersection">
+        <!-- Title / heading section -->
         <div class="title">
             <h1>
                 ثبت نام
+                <!-- "Sign Up" -->
             </h1>
             <h5>
                 بیایید یک <span>اکانت</span> ایجاد کنیم
+                <!-- "Let's create an account" -->
             </h5>
         </div>
+
+        <!-- Registration form -->
         <form action="" class="formsection">
+            <!-- First name field -->
             <div class="halfinput">
-                <label for="">
-                    نام
-                </label>
-                <br>
-                <input type="text" name="" id="" placeholder="رایان" required>
+                <label for="">نام</label><br>
+                <input type="text" placeholder="رایان" required>
             </div>
+
+            <!-- Last name field -->
             <div class="halfinput">
-                <label for="">
-                    نام خانوادگی
-                </label>
-                <br>
-                <input type="text" name="" id="" placeholder="عبدی" required>
+                <label for="">نام خانوادگی</label><br>
+                <input type="text" placeholder="عبدی" required>
             </div>
+
+            <!-- Gender selection -->
             <div class="radiosection">
                 <label for="">جنسیت</label><br>
                 <div class="radiobox">
                     <div class="checkboxsection">
-                        <label for="">
-                            مرد
-                        </label>
-                        <input class="radio" type="radio" name="gender" id="" placeholder="gender">
-                        <label for="">
-                            زن
-                        </label>
-                        <input class="radio" type="radio" name="gender" id="" placeholder="gender">
+                        <label for="">مرد</label>
+                        <input class="radio" type="radio" name="gender" placeholder=".">
+
+                        <label for="">زن</label>
+                        <input class="radio" type="radio" name="gender" placeholder=".">
                     </div>
                 </div>
             </div>
+
+            <!-- Email -->
             <div class="lineinput">
-                <label for="">
-                    ایمیل
-                </label>
-                <br>
-                <input type="email" name="" id="" placeholder="mohammadabdia10s@gmail.com">
-            </div>
-            <div class="lineinput">
-                <label for="">
-                    تکرار ایمیل
-                </label>
-                <br>
-                <input type="email" name="" id="" placeholder="mohammadabdia10s@gmail.com">
-            </div>
-            <div class="lineinput">
-                <label for="">
-                    رمز عبور
-                </label><br>
-                <input type="password" name="" id="" placeholder="Rayan2006221*">
-            </div>
-            <div class="lineinput">
-                <label for="">
-                    تکرار رمز عبور
-                </label>
-                <br>
-                <input type="password" name="" id="" placeholder="Rayan2006221*">
-            </div>
-            <div class="checkboxsection">
-                <input class="checkbox" type="checkbox" name="" id="" placeholder="checkbox">
-                <label for="">من با شرایط و ضوابط موافقم</label>
-            </div>
-            <div class="btnsection">
-                <button type="submit">
-                ثبت نام
-                </button>
+                <label for="">ایمیل</label><br>
+                <input type="email" placeholder="mohammadabdia10s@gmail.com">
             </div>
 
+            <!-- Retype Email -->
+            <div class="lineinput">
+                <label for="">تکرار ایمیل</label><br>
+                <input type="email" placeholder="mohammadabdia10s@gmail.com">
+            </div>
+
+            <!-- Password -->
+            <div class="lineinput">
+                <label for="">رمز عبور</label><br>
+                <input type="password" placeholder="Rayan2006221*">
+            </div>
+
+            <!-- Retype Password -->
+            <div class="lineinput">
+                <label for="">تکرار رمز عبور</label><br>
+                <input type="password" placeholder="Rayan2006221*">
+            </div>
+
+            <!-- Terms and conditions checkbox -->
+            <div class="checkboxsection">
+                <input class="checkbox" type="checkbox" placeholder=".">
+                <label for="">من با شرایط و ضوابط موافقم</label>
+            </div>
+
+            <!-- Submit button -->
+            <div class="btnsection">
+                <button type="submit">
+                    ثبت نام <!-- "Sign up" -->
+                </button>
+            </div>
         </form>
     </section>
 </body>

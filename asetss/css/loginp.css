@@ -1,14 +1,23 @@
+/* Import Persian font */
+
 @font-face {
     font-family: yekan;
     src: url('/asetss/fontfarsi/yekan-font/yekan-regular.woff2') format('woff2'), url('/asetss/fontfarsi/yekan-font/yekan-regular.woff') format('woff'), url('/asetss/fontfarsi/yekan-font/yekan-regular.ttf') format('truetype');
 }
 
+
+/* Base body styles */
+
 body {
     text-align: center;
     direction: rtl;
+    /* Right-to-left layout */
     font-family: yekan;
     height: 100vh;
 }
+
+
+/* Language switch link */
 
 a {
     display: flex;
@@ -16,6 +25,9 @@ a {
     width: 70px;
     height: 40px;
 }
+
+
+/* Language button styling */
 
 .Language {
     text-align: justify;
@@ -33,6 +45,9 @@ a {
     background: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/Flag_of_the_USA.png') center center/cover no-repeat;
 }
 
+
+/* Registration form container */
+
 .registersection {
     width: 25%;
     height: auto;
@@ -44,36 +59,58 @@ a {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
 }
 
+
+/* Title alignment */
+
 .registersection .title {
     margin-right: 20px;
 }
+
+
+/* Main heading (Sign up) */
 
 .registersection h1 {
     font-size: 30px;
     display: inline-block;
     background: linear-gradient(to right, #FAFF00, #00E0FF);
     background-clip: text;
-    color: #00000000;
+    color: transparent;
+    /* Make gradient visible */
     margin: 25px 0 0 0;
 }
+
+
+/* Subtitle */
 
 .registersection h5 {
     margin: 25px 0 0 0;
 }
 
+
+/* Highlighted span */
+
 .registersection span {
     color: #ff0000;
 }
 
+
+/* Form container */
+
 .formsection {
     text-align: center;
 }
+
+
+/* Half-width input fields (first & last name) */
 
 .formsection .halfinput {
     text-align: justify;
     width: 46%;
     display: inline-block;
 }
+
+
+/* Full-width input fields */
 
 .formsection .lineinput {
     text-align: justify;
@@ -82,27 +119,39 @@ a {
     margin: 10px 10px 0 0;
 }
 
+
+/* Label margin */
+
 .lineinput label,
 .formsection label {
     margin-left: 10px;
 }
+
+
+/* Email/password input spacing */
 
 .lineinput input {
     width: calc(100% - 50px);
     height: 30px;
 }
 
+
+/* General input styling */
+
 input {
     border: none;
-    background: linear-gradient( to left, #FF8A00, #DBFF00);
+    background: linear-gradient(to left, #FF8A00, #DBFF00);
     height: 30px;
     border-radius: 100px;
     color: #ffffff;
-    font-family: yekan;
     font-size: 15px;
     padding: 0 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+    font-family: inherit;
 }
+
+
+/* Checkbox & radio wrapper */
 
 .checkboxsection,
 .radiosection {
@@ -110,10 +159,16 @@ input {
     padding-right: 20px;
 }
 
+
+/* Reset box-shadow for check/radio */
+
 .radio,
 .checkbox {
     box-shadow: none;
 }
+
+
+/* Checkbox styling */
 
 .checkboxsection {
     padding: 0;
@@ -131,6 +186,9 @@ input {
     vertical-align: sub;
 }
 
+
+/* Submit button */
+
 .btnsection button {
     width: 50%;
     height: 35px;
@@ -138,20 +196,68 @@ input {
     border-radius: 100px;
     background-color: #FF8A00;
     color: white;
-    font-family: yekan;
+    font-family: inherit;
     box-shadow: 0 0 10px black inset;
     transition: all 1s ease;
 }
 
+
+/* Button hover */
+
 .btnsection button:hover {
-    box-shadow: 0 0 10px black
+    box-shadow: 0 0 10px black;
 }
+
+
+/* Button focus (clicked) */
 
 .btnsection button:focus {
     box-shadow: 0 0 10px black inset;
     background-color: yellow;
 }
 
+
+/* Checkbox placeholder styling */
+
 .checkboxsection input::placeholder {
     color: rgba(255, 255, 255, 0.714);
+}
+
+
+/* ---------------- Responsive Design ---------------- */
+
+
+/* Tablets */
+
+@media (max-width: 1000px) {
+    .registersection {
+        width: 40%;
+        height: auto;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+}
+
+
+/* Small tablets & large phones */
+
+@media (max-width: 700px) {
+    .registersection {
+        width: 80%;
+        height: auto;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+}
+
+
+/* Small phones */
+
+@media (max-width: 413px) {
+    .registersection {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
 }

@@ -1,153 +1,274 @@
-        html,
-        body {
-            height: 100vh;
-            margin: 0;
-            /* font-size: 50px; */
-        }
-        
-        .headerweb {
-            /* width: 100vw; */
-            height: 20%;
-            background-color: blue;
-            background: linear-gradient(to right, aqua, blue);
-            /* display: inline-block; */
-            text-align: center;
-        }
-        
-        .headerweb h1 {
-            display: inline-block;
-            text-align: center;
-            font-size: 15px;
-            margin-top: 30px;
-            line-height: 100px;
-            border-radius: 9999px;
-            background-color: black;
-            color: white;
-            width: 200px;
-            height: 100px;
-            padding: 0px 15px 0px 15px;
-            box-shadow: 0 0 50px rgb(255, 255, 255);
-            border: 2px solid white;
-        }
-        
-        main {
-            /* width: 100vw; */
-            height: 60%;
-            background-color: blueviolet;
-            font-size: 1em;
-            padding-top: 1px;
-            text-align: center;
-            background-image: url(/download\ \(1\).png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: rgba(0, 0, 255, 0.371);
-            background-blend-mode: overlay;
-            background: url(/asetss/img/download\ \(1\).png) center / cover no-repeat, linear-gradient(45deg, rgba(0, 0, 255, 0.371), rgba(0, 0, 0, 0.526), rgba(255, 0, 0, 0.418), rgba(255, 255, 0, 0.444));
-        }
-        
-        .tex-box {
-            display: inline-block;
-            width: 20%;
-            margin: 0 20px;
-            background-color: rgba(0, 255, 255, 0.74);
-            border-radius: 15px;
-            text-align: justify;
-            padding: 20px;
-            vertical-align: top;
-        }
-        
-        .tex-box h1 {
-            margin: 0 0 8px 0;
-            text-shadow: 0 0 10px yellow;
-        }
-        
-        .tex-box p {
-            margin: 0;
-            font-size: 14.4px;
-        }
-        
-        .gallerybox {
-            width: 600px;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.6);
-            display: inline-block;
-        }
-        
-        .imgesection1,
-        .imgesection2,
-        .imgesection3 {
-            width: 30%;
-            height: 100%;
-            display: inline-block;
-            padding: 0 5px 0 5px;
-        }
-        
-        .imgesection2 .img1 {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            margin: 10px 0 10px 0;
-            border-radius: 16px;
-        }
-        
-        .imgesection2 .img2 {
-            width: 80%;
-            height: 140px;
-            object-fit: cover;
-            margin: 10px 0 10px 0;
-            border-radius: 50%;
-            box-shadow: 0 0 10px black;
-            border: solid 3px black;
-        }
-        
-        .imgesection2 .img3 {
-            width: 100%;
-            height: 130px;
-            object-fit: cover;
-            margin: 10px 0 10px 0;
-            border-radius: 16px;
-        }
-        
-        img {
-            width: 100%;
-            object-fit: cover;
-            margin: 10px 0 10px 0;
-            border-radius: 16px;
-        }
-        
-        .imgesection1 .img1,
-        .imgesection3 .img1 {
-            height: 100px;
-        }
-        
-        .imgesection1 .img2,
-        .imgesection3 .img2 {
-            height: 80px;
-        }
-        
-        .imgesection1 .img3,
-        .imgesection3 .img3 {
-            height: 110px;
-        }
-        
-        .imgesection1 .img4,
-        .imgesection3 .img4 {
-            height: 100px;
-        }
-        
-        .test {
-            width: 300px;
-            height: 150px;
-            background-color: beige;
-            margin-left: 20px;
-            margin-top: 20px;
-            padding: 20px;
-        }
-        
-        footer {
-            /* width: 100vw; */
-            height: 20%;
-            background-color: blue;
-            background: radial-gradient(ellipse, red, blue);
-        }
+/* Reset default margins and set full height */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /* font-size: 50px; */
+    /* Example: oversized font for debugging */
+}
+
+
+/* Header container styling */
+
+.headerweb {
+    height: 20%;
+    background-color: blue;
+    background: linear-gradient(to right, aqua, blue);
+    text-align: center;
+}
+
+
+/* Remove link underline in header */
+
+.headerweb a {
+    text-decoration: none;
+    /* Alternative styles for text-decoration */
+}
+
+
+/* Header title (h1) styling */
+
+.headerweb h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    line-height: 100px;
+    border-radius: 9999px;
+    /* Fully rounded (circle/oval shape) */
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100px;
+    padding: 0px 15px 0px 15px;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    border: 2px solid white;
+}
+
+
+/* Main section styling */
+
+main {
+    height: auto;
+    display: inline-block;
+    background-color: blueviolet;
+    font-size: 1em;
+    padding-top: 1px;
+    text-align: center;
+    /* Background image with blend mode */
+    background: url(/asetss/img/download\ \(1\).png) center / cover no-repeat, linear-gradient(45deg, rgba(0, 0, 255, 0.371), rgba(0, 0, 0, 0.526), rgba(255, 0, 0, 0.418), rgba(255, 255, 0, 0.444));
+}
+
+
+/* Text content box */
+
+.tex-box {
+    display: inline-block;
+    width: 20%;
+    height: 500px;
+    margin: 15px 15px;
+    background-color: rgba(0, 255, 255, 0.74);
+    border-radius: 15px;
+    text-align: justify;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.tex-box h1 {
+    margin: 0 0 8px 0;
+    text-shadow: 0 0 10px yellow;
+}
+
+.tex-box p {
+    margin: 0;
+    font-size: 14.4px;
+}
+
+
+/* Gallery box container */
+
+.gallerybox {
+    width: 35%;
+    height: 520px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: inline-flex;
+    gap: 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+
+/* Image columns */
+
+.imgesection1,
+.imgesection2,
+.imgesection3 {
+    width: 30%;
+    height: calc(100% - 50px);
+    padding: 5px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* General image styling */
+
+img {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 16px;
+    object-fit: cover;
+    /* Ensures image covers container */
+}
+
+
+/* Custom heights for different images */
+
+.imgesection1 .img1 {
+    height: 31.11%;
+}
+
+.imgesection1 .img2 {
+    height: 21.54%;
+}
+
+.imgesection1 .img3 {
+    height: 16.75%;
+}
+
+.imgesection1 .img4 {
+    height: 26.32%;
+}
+
+.imgesection2 .img1 {
+    height: 33.29%;
+}
+
+.imgesection2 .img2 {
+    height: 32.76%;
+    border-radius: 50%;
+}
+
+
+/* Circular image */
+
+.imgesection2 .img3 {
+    height: 32.9%;
+}
+
+.imgesection3 .img1 {
+    height: 19.14%;
+}
+
+.imgesection3 .img2 {
+    height: 28.71%;
+}
+
+.imgesection3 .img3 {
+    height: 23.93%;
+}
+
+.imgesection3 .img4 {
+    height: 23.93%;
+}
+
+
+/* Footer styling */
+
+footer {
+    height: 20%;
+    background-color: blue;
+    background: radial-gradient(ellipse, red, blue);
+}
+
+
+/* ---------------- Responsive Design ---------------- */
+
+
+/* For tablets and smaller desktops */
+
+@media(max-width: 1024px) {
+    .headerweb .title {
+        width: 100px;
+        height: 50px;
+    }
+    .gallerybox {
+        width: 80%;
+        height: 800px;
+    }
+    .tex-box {
+        width: 80%;
+        margin: 15px;
+    }
+}
+
+
+/* For tablets in portrait */
+
+@media (max-width: 768px) {
+    .tex-box {
+        width: 80%;
+        margin: 15px;
+    }
+    .gallerybox {
+        height: 600px;
+    }
+}
+
+
+/* For small phones */
+
+@media (max-width: 452px) {
+    .tex-box {
+        width: 80%;
+    }
+    .tex-box h1 {
+        font-size: 30px;
+    }
+    .tex-box p {
+        font-size: 12.4px;
+    }
+    .gallerybox {
+        height: 350px;
+    }
+    .imgesection1,
+    .imgesection2,
+    .imgesection3 {
+        width: 29%;
+        display: inline-block;
+        padding: 10px 5px;
+    }
+}
+
+
+/* Very small devices */
+
+@media (max-width: 376px) {
+    .tex-box {
+        width: 80%;
+    }
+    .gallerybox {
+        height: 300px;
+    }
+}
+
+
+/* Extra small screens */
+
+@media (max-width: 320px) {
+    .gallerybox {
+        height: 250px;
+    }
+    .imgesection1,
+    .imgesection2,
+    .imgesection3 {
+        width: 28%;
+        display: inline-block;
+        padding: 10px 5px;
+    }
+}

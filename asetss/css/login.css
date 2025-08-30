@@ -1,7 +1,12 @@
+/* General body styling */
+
 body {
     text-align: center;
     height: 100vh;
 }
+
+
+/* Language button link container */
 
 body a {
     display: flex;
@@ -9,6 +14,9 @@ body a {
     width: 70px;
     height: 40px;
 }
+
+
+/* Language switch button (Persian flag background) */
 
 .Language {
     text-align: justify;
@@ -27,6 +35,9 @@ body a {
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_Iran_without_Tawhid.svg/2560px-Flag_of_Iran_without_Tawhid.svg.png') center center/cover no-repeat;
 }
 
+
+/* Registration section container */
+
 .registersection {
     width: 25%;
     height: auto;
@@ -38,9 +49,15 @@ body a {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
 }
 
+
+/* Title section inside registration */
+
 .registersection .title {
     margin-left: 20px;
 }
+
+
+/* Main heading (Sign Up) */
 
 .registersection h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -49,21 +66,34 @@ body a {
     background: linear-gradient(to right, #FAFF00, #00E0FF);
     background-clip: text;
     color: #00000000;
+    /* Transparent text to show gradient */
     margin: 25px 0 0 0;
 }
+
+
+/* Subtitle text */
 
 .registersection h5 {
     margin: 25px 0 0 0;
 }
 
+
+/* Highlighted span in subtitle */
+
 .registersection span {
     color: #ff0000;
 }
+
+
+/* Form container */
 
 .formsection {
     text-align: center;
     margin: 0 10px;
 }
+
+
+/* Half-width input containers (first & last name) */
 
 .formsection .halfinput {
     text-align: justify;
@@ -72,6 +102,9 @@ body a {
     display: inline-block;
 }
 
+
+/* Full-width input containers */
+
 .formsection .lineinput {
     text-align: justify;
     display: inline-block;
@@ -79,19 +112,28 @@ body a {
     margin: 10px 0 0 0;
 }
 
+
+/* Labels alignment */
+
 .lineinput label,
 .formsection label {
     margin-left: 10px;
 }
+
+
+/* Input spacing */
 
 .halfinput input,
 .lineinput input {
     margin: 10px 0 0 0px;
 }
 
+
+/* General input styling */
+
 input {
     border: none;
-    background: linear-gradient( to left, #FF8A00, #DBFF00);
+    background: linear-gradient(to left, #FF8A00, #DBFF00);
     width: calc(100% - 20px);
     height: 30px;
     border-radius: 100px;
@@ -99,7 +141,11 @@ input {
     font-size: 15px;
     padding: 0 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+    font-family: inherit;
 }
+
+
+/* Checkbox and Radio Sections */
 
 .checkboxsection,
 .radiosection {
@@ -111,6 +157,9 @@ input {
 .checkbox {
     box-shadow: none;
 }
+
+
+/* Checkbox styling */
 
 .checkboxsection {
     padding: 0;
@@ -128,6 +177,9 @@ input {
     vertical-align: sub;
 }
 
+
+/* Submit button styling */
+
 .btnsection button {
     width: 50%;
     height: 35px;
@@ -140,15 +192,72 @@ input {
     transition: all 1s ease;
 }
 
+
+/* Hover effect on button */
+
 .btnsection button:hover {
     box-shadow: 0 0 10px black;
 }
+
+
+/* Focus effect on button */
 
 .btnsection button:focus {
     box-shadow: 0 0 10px black inset;
     background-color: yellow;
 }
 
+
+/* Placeholder text styling */
+
 .formsection input::placeholder {
     color: rgba(255, 255, 255, 0.714);
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+
+/* Medium screens (up to 1000px) */
+
+@media (max-width: 1000px) {
+    .registersection {
+        width: 40%;
+        height: auto;
+        padding: 20px 0 20px 0;
+        margin: 20px 0 20px 0;
+        display: inline-block;
+        text-align: justify;
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
+    }
+    /* Small screens (up to 700px) */
+    @media (max-width: 700px) {
+        .registersection {
+            width: 80%;
+            height: auto;
+            padding: 20px 0 20px 0;
+            margin: 20px 0 20px 0;
+            display: inline-block;
+            text-align: justify;
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
+        }
+    }
+    /* Extra small screens (up to 413px) */
+    @media (max-width: 413px) {
+        .registersection {
+            width: 100%;
+            height: auto;
+            padding: 20px 0 20px 0;
+            margin: 20px 0 20px 0;
+            display: inline-block;
+            text-align: justify;
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
+        }
+    }
 }
