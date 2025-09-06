@@ -1,0 +1,296 @@
+/* Base styles for body */
+
+body {
+    background-color: rgb(0, 5, 29);
+    color: white;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Header section */
+
+header {
+    width: 100%;
+    height: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px 0;
+    background-color: rgb(0, 11, 67);
+    box-shadow: 0 0 20px 10px rgb(66, 65, 101);
+}
+
+
+/* Remove default list style */
+
+ul {
+    list-style: none;
+    padding: 0;
+    word-spacing: -4px;
+}
+
+
+/* Container for site list */
+
+.site-list {
+    width: 80%;
+    height: auto;
+}
+
+
+/* Each site list item */
+
+.site-list_item {
+    height: 70px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* Wrapper for site item details */
+
+.site-item_details {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Each detail box inside site item */
+
+.site-item_detail {
+    display: inline-block;
+    width: calc( 25% - 1px);
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+/* Info section of item */
+
+.site-item_info {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* Image inside site info */
+
+.site-item_info img {
+    width: 52px;
+    background-color: white;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+
+/* Titles */
+
+h3,
+h4 {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+
+/* Ranking and score wrapper */
+
+.Rank-and-score {
+    height: 50%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* Title row */
+
+.titel-list {
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* Progress bar base */
+
+progress {
+    height: 12px;
+    border-radius: 10px;
+    border: 2px solid green;
+    overflow: hidden;
+}
+
+
+/* Progress bar background */
+
+progress::-webkit-progress-bar {
+    background-color: white;
+}
+
+
+/* Progress value color */
+
+progress::-webkit-progress-value {
+    background-color: green;
+}
+
+
+/* Image inside score section */
+
+.site-item_score img {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+}
+
+
+/* Stars container */
+
+.stars {
+    display: flex;
+}
+
+
+/* Star styling */
+
+.Rank-and-score .star {
+    color: rgb(220, 109, 11);
+    font-size: 150%;
+    gap: 0px;
+}
+
+
+/* Link section inside item */
+
+.site-item_link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Link styling */
+
+.site-item_link a {
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Website logo */
+
+.webLogo {
+    width: 95%;
+    height: 50px;
+    border-radius: 12px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+
+/* Button hover effect */
+
+button:hover {
+    color: #fff;
+    background-color: #000724;
+    box-shadow: rgb(19, 17, 28) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+
+/* Button active state */
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+/* Responsive styles for small screens */
+
+@media (max-width: 700px) {
+    /* Header adjustments */
+    header {
+        height: 150px;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    /* List item adjustments */
+    .site-list_item {
+        height: 400px;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+    /* Detail becomes stacked */
+    .site-item_detail {
+        width: 100%;
+        height: 25%;
+    }
+    /* Info section stacked */
+    .site-item_info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid wheat;
+    }
+    /* Larger images on small screens */
+    .site-item_info img {
+        width: 60px;
+        margin: 10px 0 0 0;
+    }
+    /* Title and rank sections */
+    .titel-list,
+    .Rank-and-score {
+        width: calc(100% - 15px);
+        margin-left: 15px;
+    }
+    /* Larger progress bar */
+    progress {
+        height: 20px;
+        width: 430px;
+        border-radius: 10px;
+        border: 2px solid green;
+        overflow: hidden;
+    }
+    /* Larger heading text */
+    h3 {
+        font-size: 25px;
+    }
+    /* Larger stars */
+    .Rank-and-score .star {
+        color: rgb(220, 109, 11);
+        font-size: 250%;
+        gap: 0px;
+    }
+    /* Logo adjustments */
+    .webLogo {
+        width: 90%;
+        height: 55px;
+        font-size: 20px;
+    }
+}

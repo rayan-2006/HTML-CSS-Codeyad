@@ -1,73 +1,69 @@
-/* Reset default margins and set full height */
+/* Global styles for HTML and body */
 
 html,
 body {
     height: 100%;
+    /* Sets full viewport height */
     margin: 0;
+    /* Removes default margins */
     /* font-size: 50px; */
-    /* Example: oversized font for debugging */
+    /* Commented out font size */
 }
-
-
-/* Header container styling */
 
 .headerweb {
     height: 20%;
-    background-color: blue;
     background: linear-gradient(to right, aqua, blue);
     text-align: center;
 }
 
 
-/* Remove link underline in header */
+/* Styles for header anchor tag */
 
-.headerweb a {
+.headerweb .headerlink {
     text-decoration: none;
-    /* Alternative styles for text-decoration */
+    /* text-decoration: solid;
+    text-decoration-line: overline;
+    text-decoration-color:  rgb(244, 235, 235); */
 }
 
 
-/* Header title (h1) styling */
+/* Styles for header title */
 
 .headerweb h1 {
     display: inline-block;
-    text-align: center;
     font-size: 15px;
     margin-top: 30px;
     line-height: 100px;
     border-radius: 9999px;
-    /* Fully rounded (circle/oval shape) */
     background-color: black;
     color: white;
     width: 200px;
     height: 100px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 15px;
     box-shadow: 0 0 50px rgb(255, 255, 255);
     border: 2px solid white;
 }
 
 
-/* Main section styling */
+/* Main content section styles */
 
 main {
     height: auto;
     display: inline-block;
-    background-color: blueviolet;
     font-size: 1em;
     padding-top: 1px;
     text-align: center;
-    /* Background image with blend mode */
     background: url(/asetss/img/download\ \(1\).png) center / cover no-repeat, linear-gradient(45deg, rgba(0, 0, 255, 0.371), rgba(0, 0, 0, 0.526), rgba(255, 0, 0, 0.418), rgba(255, 255, 0, 0.444));
 }
 
 
-/* Text content box */
+/* Text box styles */
 
 .tex-box {
     display: inline-block;
     width: 20%;
     height: 500px;
-    margin: 15px 15px;
+    margin: 15px;
     background-color: rgba(0, 255, 255, 0.74);
     border-radius: 15px;
     text-align: justify;
@@ -75,10 +71,16 @@ main {
     vertical-align: top;
 }
 
+
+/* Heading styles within text box */
+
 .tex-box h1 {
     margin: 0 0 8px 0;
     text-shadow: 0 0 10px yellow;
 }
+
+
+/* Paragraph styles within text box */
 
 .tex-box p {
     margin: 0;
@@ -86,7 +88,7 @@ main {
 }
 
 
-/* Gallery box container */
+/* Gallery section styles */
 
 .gallerybox {
     width: 35%;
@@ -95,13 +97,12 @@ main {
     display: inline-flex;
     gap: 10px;
     border-radius: 15px;
-    margin: 0 auto;
-    margin-top: 15px;
-    padding: 10px;
+    margin: 15px 0;
+    padding: 10px
 }
 
 
-/* Image columns */
+/* Styles for image columns */
 
 .imgesection1,
 .imgesection2,
@@ -116,18 +117,17 @@ main {
 }
 
 
-/* General image styling */
+/* General image styles */
 
 img {
     width: 100%;
+    object-fit: cover;
     margin: 5px 0;
     border-radius: 16px;
-    object-fit: cover;
-    /* Ensures image covers container */
 }
 
 
-/* Custom heights for different images */
+/* Specific image heights for first column */
 
 .imgesection1 .img1 {
     height: 31.11%;
@@ -145,6 +145,9 @@ img {
     height: 26.32%;
 }
 
+
+/* Specific image heights for second column */
+
 .imgesection2 .img1 {
     height: 33.29%;
 }
@@ -152,14 +155,15 @@ img {
 .imgesection2 .img2 {
     height: 32.76%;
     border-radius: 50%;
+    /* Makes image circular */
 }
-
-
-/* Circular image */
 
 .imgesection2 .img3 {
     height: 32.9%;
 }
+
+
+/* Specific image heights for third column */
 
 .imgesection3 .img1 {
     height: 19.14%;
@@ -178,21 +182,17 @@ img {
 }
 
 
-/* Footer styling */
+/* Footer section styles */
 
 footer {
     height: 20%;
-    background-color: blue;
     background: radial-gradient(ellipse, red, blue);
 }
 
 
-/* ---------------- Responsive Design ---------------- */
+/* Responsive styles for screens up to 1024px */
 
-
-/* For tablets and smaller desktops */
-
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
     .headerweb .title {
         width: 100px;
         height: 50px;
@@ -208,7 +208,7 @@ footer {
 }
 
 
-/* For tablets in portrait */
+/* Responsive styles for screens up to 768px */
 
 @media (max-width: 768px) {
     .tex-box {
@@ -221,7 +221,7 @@ footer {
 }
 
 
-/* For small phones */
+/* Responsive styles for screens up to 452px */
 
 @media (max-width: 452px) {
     .tex-box {
@@ -246,7 +246,7 @@ footer {
 }
 
 
-/* Very small devices */
+/* Responsive styles for screens up to 376px */
 
 @media (max-width: 376px) {
     .tex-box {
@@ -258,7 +258,7 @@ footer {
 }
 
 
-/* Extra small screens */
+/* Responsive styles for screens up to 320px */
 
 @media (max-width: 320px) {
     .gallerybox {

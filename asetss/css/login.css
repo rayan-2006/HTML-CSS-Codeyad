@@ -1,4 +1,4 @@
-/* General body styling */
+/* Centers content and sets full viewport height */
 
 body {
     text-align: center;
@@ -6,7 +6,7 @@ body {
 }
 
 
-/* Language button link container */
+/* Styles for anchor tags */
 
 body a {
     display: flex;
@@ -16,10 +16,9 @@ body a {
 }
 
 
-/* Language switch button (Persian flag background) */
+/* Language button styles */
 
 .Language {
-    text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -36,7 +35,7 @@ body a {
 }
 
 
-/* Registration section container */
+/* Registration section styles */
 
 .registersection {
     width: 25%;
@@ -50,14 +49,14 @@ body a {
 }
 
 
-/* Title section inside registration */
+/* Title container styles */
 
 .registersection .title {
     margin-left: 20px;
 }
 
 
-/* Main heading (Sign Up) */
+/* Main heading styles */
 
 .registersection h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -66,12 +65,11 @@ body a {
     background: linear-gradient(to right, #FAFF00, #00E0FF);
     background-clip: text;
     color: #00000000;
-    /* Transparent text to show gradient */
     margin: 25px 0 0 0;
 }
 
 
-/* Subtitle text */
+/* Subtitle styles */
 
 .registersection h5 {
     margin: 25px 0 0 0;
@@ -85,7 +83,7 @@ body a {
 }
 
 
-/* Form container */
+/* Form section styles */
 
 .formsection {
     text-align: center;
@@ -93,7 +91,7 @@ body a {
 }
 
 
-/* Half-width input containers (first & last name) */
+/* Half-width input styles */
 
 .formsection .halfinput {
     text-align: justify;
@@ -103,17 +101,17 @@ body a {
 }
 
 
-/* Full-width input containers */
+/* Full-width input styles */
 
 .formsection .lineinput {
     text-align: justify;
-    display: inline-block;
     width: 100%;
     margin: 10px 0 0 0;
+    display: inline-block;
 }
 
 
-/* Labels alignment */
+/* Label styles for inputs */
 
 .lineinput label,
 .formsection label {
@@ -121,15 +119,15 @@ body a {
 }
 
 
-/* Input spacing */
+/* Input margin adjustments */
 
 .halfinput input,
 .lineinput input {
-    margin: 10px 0 0 0px;
+    margin: 10px 0 0 0;
 }
 
 
-/* General input styling */
+/* General input styles */
 
 input {
     border: none;
@@ -145,7 +143,7 @@ input {
 }
 
 
-/* Checkbox and Radio Sections */
+/* Checkbox and radio section styles */
 
 .checkboxsection,
 .radiosection {
@@ -153,23 +151,32 @@ input {
     margin-top: 10px;
 }
 
+
+/* Radio and checkbox input styles */
+
 .radio,
 .checkbox {
     box-shadow: none;
 }
 
 
-/* Checkbox styling */
+/* Checkbox section styles */
 
 .checkboxsection {
     padding: 0;
 }
+
+
+/* Checkbox label styles */
 
 .checkboxsection label {
     vertical-align: super;
     font-size: 10px;
     margin: 0 0 0 10px;
 }
+
+
+/* Checkbox input styles */
 
 .checkboxsection input {
     width: 10px;
@@ -178,7 +185,7 @@ input {
 }
 
 
-/* Submit button styling */
+/* Submit button styles */
 
 .btnsection button {
     width: 50%;
@@ -193,14 +200,14 @@ input {
 }
 
 
-/* Hover effect on button */
+/* Button hover effect */
 
 .btnsection button:hover {
     box-shadow: 0 0 10px black;
 }
 
 
-/* Focus effect on button */
+/* Button focus effect */
 
 .btnsection button:focus {
     box-shadow: 0 0 10px black inset;
@@ -208,56 +215,50 @@ input {
 }
 
 
-/* Placeholder text styling */
+/* Placeholder text color */
 
 .formsection input::placeholder {
     color: rgba(255, 255, 255, 0.714);
 }
 
 
-/* ---------- Responsive Design ---------- */
-
-
-/* Medium screens (up to 1000px) */
+/* Responsive styles for screens up to 1000px */
 
 @media (max-width: 1000px) {
     .registersection {
         width: 40%;
-        height: auto;
-        padding: 20px 0 20px 0;
-        margin: 20px 0 20px 0;
-        display: inline-block;
-        text-align: justify;
+        padding: 20px 0;
+        margin: 20px 0;
         border: 1px solid black;
         border-radius: 15px;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
     }
-    /* Small screens (up to 700px) */
-    @media (max-width: 700px) {
-        .registersection {
-            width: 80%;
-            height: auto;
-            padding: 20px 0 20px 0;
-            margin: 20px 0 20px 0;
-            display: inline-block;
-            text-align: justify;
-            border: 1px solid black;
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
-        }
+}
+
+
+/* Responsive styles for screens up to 700px */
+
+@media (max-width: 700px) {
+    .registersection {
+        width: 80%;
+        padding: 20px 0;
+        margin: 20px 0;
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
     }
-    /* Extra small screens (up to 413px) */
-    @media (max-width: 413px) {
-        .registersection {
-            width: 100%;
-            height: auto;
-            padding: 20px 0 20px 0;
-            margin: 20px 0 20px 0;
-            display: inline-block;
-            text-align: justify;
-            border: 1px solid black;
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
-        }
+}
+
+
+/* Responsive styles for screens up to 413px */
+
+@media (max-width: 413px) {
+    .registersection {
+        width: 100%;
+        padding: 20px 0;
+        margin: 20px 0;
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.432);
     }
 }
