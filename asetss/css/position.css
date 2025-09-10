@@ -1,0 +1,113 @@
+@font-face {
+    font-family: yekan;
+    src: url('/asetss/fontfarsi/yekan-font/yekan-regular.woff');
+    src: url('/asetss/fontfarsi/yekan-font/yekan-regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: yekan;
+    text-align: center;
+}
+
+.static-box {
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.reletive-box {
+    background-color: lightgreen;
+    padding: 20px;
+    border: 2px solid green;
+    margin: 10px auto;
+    width: 80%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.absolute-box {
+    background-color: lightcoral;
+    padding: 20px;
+    border: 2px solid red;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    z-index: 1;
+}
+
+.fixed-box {
+    background-color: lightyellow;
+    padding: 20px;
+    border: 2px solid orange;
+    width: 200px;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.spacer {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.sticky-box {
+    background-color: lavender;
+    padding: 20px;
+    margin: 10px auto;
+    border: 2px solid purple;
+    border-radius: 15px;
+    width: 80%;
+    position: sticky;
+}
+
+.sticky-box1 {
+    top: 10px;
+    width: 72%;
+}
+
+.sticky-box2 {
+    top: 30px;
+    width: 74%;
+}
+
+.sticky-box3 {
+    top: 50px;
+    width: 76%;
+}
+
+.sticky-box4 {
+    top: 70px;
+    width: 78%;
+}
+
+.sticky-box5 {
+    top: 90px;
+    width: 80%;
+}
+
+.button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s;
+}
