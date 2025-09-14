@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: yekan;
-    src: url('/asetss/fontfarsi/yekan-font/yekan-regular.woff2') format('woff2'), url('/asetss/fontfarsi/yekan-font/yekan-regular.woff') format('woff'), url('/asetss/fontfarsi/yekan-font/yekan-regular.ttf') format('truetype');
+    src: url('persianFont/yekan-font/yekan-regular.woff2') format('woff2'), url('/asetss/fontfarsi/yekan-font/yekan-regular.woff') format('woff'), url('/asetss/fontfarsi/yekan-font/yekan-regular.ttf') format('truetype');
 }
 
 

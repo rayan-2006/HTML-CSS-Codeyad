@@ -1,13 +1,13 @@
 @font-face {
     font-family: yekan;
-    src: url('/asetss/fontfarsi/yekan-font/yekan-regular.woff');
-    src: url('/asetss/fontfarsi/yekan-font/yekan-regular.ttf');
+    src: url('/persianFont/yekan-font/yekan-regular.woff');
+    src: url('/persianFont/yekan-font/yekan-regular.ttf');
 }
 
 @font-face {
     font-family: vazir;
-    src: url('/asetss/fontfarsi/vazir-font-v18.0.0/Vazir-Bold.ttf');
-    src: url('/asetss/fontfarsi/vazir-font-v18.0.0/Vazir-Bold.woff');
+    src: url('/persianFont/vazir-font-v18.0.0/Vazir-Bold.ttf');
+    src: url('/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff');
 }
 
 * {
