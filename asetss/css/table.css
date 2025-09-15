@@ -79,6 +79,33 @@ section {
     color: #0073ff;
 }
 
+details {
+    display: none;
+}
+
+details ul {
+    position: absolute;
+    right: 1rem;
+    z-index: 1;
+    list-style: none;
+    padding: 1rem;
+    direction: rtl;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem black;
+    background-color: white;
+}
+
+summary {
+    list-style: none;
+}
+
+summary img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
 .main-content {
     padding: 20px;
     text-align: center;
@@ -191,6 +218,26 @@ td:active {
     }
     .menu {
         display: none;
+    }
+    summary {
+        list-style: none;
+    }
+    summary img {
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        display: inline;
+    }
+    details ul {
+        position: absolute;
+        right: 1rem;
+        z-index: 1;
+        list-style: none;
+        padding: 1rem;
+        direction: rtl;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.5rem black;
+        background-color: white;
     }
     Table,
     THead,
