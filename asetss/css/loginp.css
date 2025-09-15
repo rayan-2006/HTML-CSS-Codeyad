@@ -236,6 +236,21 @@ input {
         padding: 20px 0;
         margin: 20px 0;
     }
+    .halfinput input {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (min-width: 1000px) {
+    .registersection {
+        width: 40%;
+        height: auto;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+    .halfinput input {
+        width: calc(100% - 20px);
+    }
 }
 
 
