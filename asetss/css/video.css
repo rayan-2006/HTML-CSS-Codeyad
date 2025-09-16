@@ -1,4 +1,13 @@
+body {
+    display: flex;
+    text-align: center;
+}
+
 video {
     border-radius: 15px;
     width: 50%;
+}
+
+iframe {
+    display: inline-block;
 }
