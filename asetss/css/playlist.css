@@ -1,0 +1,148 @@
+@font-face {
+    font-family: yekan;
+    src: url('/persianFont/yekan-font/yekan-regular.woff');
+    src: url('/persianFont/yekan-font/yekan-regular.ttf');
+}
+
+@font-face {
+    font-family: vazir;
+    src: url('/persianFont/vazir-font-v18.0.0/Vazir-Bold.ttf');
+    src: url('/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff');
+}
+
+
+/* Universal selector – applies to ALL elements on the page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    text-decoration: none;
+    font-family: yekan;
+}
+
+
+/* Body – global page styles such as background and typography */
+
+body {
+    margin: 0;
+    background: fixed center no-repeat url("/asetss/img/35485400-99f2-11eb-90ad-0dbd618410db.png");
+}
+
+
+/* Main – styles for the primary content area */
+
+main {
+    margin: 0;
+    margin-top: 2rem;
+}
+
+
+/* Section – styles for individual content blocks within main */
+
+section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+/* Video box – container styling for the embedded video */
+
+.video-box {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.video {
+    width: 40%;
+    height: 100%;
+    outline: 0.3rem dashed red;
+    border-radius: 2rem;
+    overflow: hidden;
+    outline-offset: 0.8rem;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.audio-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.audio-Section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.audio {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.audio img {
+    width: 25%;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 1rem black;
+}
+
+
+/* Styles for large screens (default) */
+
+@media (max-width: 1024px) {
+    .video {
+        width: 90%;
+    }
+    .video-box {
+        height: 15rem;
+    }
+    .audio-Section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .audio img {
+        width: 100%;
+    }
+    .audio audio {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .video {
+        width: 90%;
+    }
+    .video-box {
+        height: 15rem;
+    }
+    .audio-Section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .audio img {
+        width: 100%;
+    }
+    .audio audio {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 480px) {}
