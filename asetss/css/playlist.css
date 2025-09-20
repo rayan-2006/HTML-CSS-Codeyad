@@ -27,7 +27,9 @@
 
 body {
     margin: 0;
-    background: fixed center no-repeat url("/asetss/img/35485400-99f2-11eb-90ad-0dbd618410db.png");
+    /* background: fixed center no-repeat url("/asetss/img/35485400-99f2-11eb-90ad-0dbd618410db.png"); */
+    background-color: #f7f3e9;
+    /* کرم روشن */
 }
 
 
@@ -62,7 +64,8 @@ section {
 .video {
     width: 40%;
     height: 100%;
-    outline: 0.3rem dashed red;
+    outline: 0.3rem dashed #bda888;
+    box-shadow: 0 0 20px white;
     border-radius: 2rem;
     overflow: hidden;
     outline-offset: 0.8rem;
@@ -78,7 +81,7 @@ video {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2.5rem;
 }
 
 .audio-Section {
@@ -94,14 +97,32 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 
 .audio img {
     width: 25%;
-    border-radius: 100%;
+    display: flex;
+    border-radius: 15%;
     object-fit: cover;
-    box-shadow: 0 0 1rem black;
+    box-shadow: 0 0 1rem #704b13;
+}
+
+audio {
+    border-radius: 30px;
+    border: 1px solid #bda888;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: "Caprasimo", serif;
+    margin-top: 10px;
+    color: #c4872d;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    color: #c19149;
 }
 
 
