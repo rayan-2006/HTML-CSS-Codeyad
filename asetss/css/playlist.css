@@ -1,16 +1,3 @@
-@font-face {
-    font-family: yekan;
-    src: url('/persianFont/yekan-font/yekan-regular.woff');
-    src: url('/persianFont/yekan-font/yekan-regular.ttf');
-}
-
-@font-face {
-    font-family: vazir;
-    src: url('/persianFont/vazir-font-v18.0.0/Vazir-Bold.ttf');
-    src: url('/persianFont/vazir-font-v18.0.0/Vazir-Bold.woff');
-}
-
-
 /* Universal selector – applies to ALL elements on the page */
 
 * {
@@ -19,7 +6,7 @@
     box-sizing: border-box;
     transition: all 0.5s;
     text-decoration: none;
-    font-family: yekan;
+    color: #75521c;
 }
 
 
@@ -27,9 +14,71 @@
 
 body {
     margin: 0;
-    /* background: fixed center no-repeat url("/asetss/img/35485400-99f2-11eb-90ad-0dbd618410db.png"); */
     background-color: #f7f3e9;
-    /* کرم روشن */
+}
+
+header {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1rem #704b13;
+    background-color: #f7f3e9;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    direction: rtl;
+    z-index: 100;
+}
+
+.logo-website {
+    width: 3%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-website img {
+    width: 100%;
+    margin: 5px;
+}
+
+.name-website {
+    width: 5%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-website p {
+    font-weight: 900;
+    margin: 5px;
+    font-size: large;
+}
+
+.menu {
+    width: 92%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    direction: ltr;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a {
+    font-size: 1.2rem;
+    font-style: unset;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #c4872d;
 }
 
 
@@ -37,7 +86,7 @@ body {
 
 main {
     margin: 0;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 
@@ -48,6 +97,18 @@ section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 85%;
+    margin: 1rem auto;
+    border: 0.1rem solid #bda888;
+    border-radius: 0.5rem;
 }
 
 
@@ -65,7 +126,7 @@ section {
     width: 40%;
     height: 100%;
     outline: 0.3rem dashed #bda888;
-    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 1rem #704b13;
     border-radius: 2rem;
     overflow: hidden;
     outline-offset: 0.8rem;
@@ -97,6 +158,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .audio img {
@@ -109,20 +171,31 @@ video {
 
 audio {
     border-radius: 30px;
-    border: 1px solid #bda888;
+    border: 3px solid #bda888;
 }
 
 h3 {
     text-transform: uppercase;
-    font-family: "Caprasimo", serif;
     margin-top: 10px;
-    color: #c4872d;
 }
 
 p {
     width: 100%;
     text-align: center;
-    color: #c19149;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1rem #704b13;
+    background-color: #f7f3e9;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    color: #333;
 }
 
 
@@ -148,6 +221,28 @@ p {
 }
 
 @media (max-width: 768px) {
+    .logo-website {
+        width: 15%;
+        justify-content: end;
+    }
+    .logo-website img {
+        width: 100%;
+    }
+    .name-website {
+        width: 50%;
+        text-align: start;
+    }
+    .name-website p {
+        width: fit-content;
+        font-size: 25px;
+    }
+    .menu {
+        display: none;
+    }
+    h1 {
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
     .video {
         width: 90%;
     }
@@ -158,8 +253,11 @@ p {
         flex-direction: column;
         align-items: center;
     }
-    .audio img {
+    .audio {
         width: 100%;
+    }
+    .audio img {
+        width: 25%;
     }
     .audio audio {
         width: 80vw;
