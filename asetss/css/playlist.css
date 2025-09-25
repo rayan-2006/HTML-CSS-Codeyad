@@ -39,7 +39,7 @@ header {
 
 .logo-website img {
     width: 100%;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .name-website {
@@ -56,28 +56,112 @@ header {
     font-size: large;
 }
 
-.menu {
-    width: 92%;
+.menu-Desktop {
+    width: 89%;
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.menu ul {
+.menu-Desktop ul {
     display: flex;
     direction: ltr;
     list-style: none;
     gap: 2rem;
 }
 
-.menu a {
+.menu-Desktop a {
     font-size: 1.2rem;
     font-style: unset;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.menu a:hover {
+.menu-Desktop a:hover {
+    color: #c4872d;
+}
+
+.menu-mobile {
+    display: none;
+    width: 45%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-mobile img {
+    height: 60%;
+}
+
+.porduct-model {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f7f3e9;
+    box-shadow: 0 0 1rem #704b13 inset;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.porduct-model:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.section-1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 10px;
+}
+
+.menu-titel {
+    width: 50%;
+    direction: ltr;
+    margin-left: 10px;
+}
+
+.menu-titel h3 {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.cancel-menu {
+    width: 50%;
+    height: 100%;
+}
+
+.cancel-menu img {
+    height: 80%;
+}
+
+.section-2 {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    direction: ltr;
+}
+
+.section-2 ul {
+    list-style: none;
+}
+
+.section-2 li {
+    padding: 8px 0 8px 2px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.section-2 li:not(:last-child) {
+    border-bottom: 2px solid #bda888;
+}
+
+.section-2 li:hover {
     color: #c4872d;
 }
 
@@ -229,15 +313,18 @@ footer p {
         width: 100%;
     }
     .name-website {
-        width: 50%;
+        width: 40%;
         text-align: start;
     }
     .name-website p {
         width: fit-content;
         font-size: 25px;
     }
-    .menu {
+    .menu-Desktop {
         display: none;
+    }
+    .menu-mobile {
+        display: flex;
     }
     h1 {
         font-size: 1.3rem;
